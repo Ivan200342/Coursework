@@ -15,35 +15,16 @@ public class Main {
         Employee k = new Employee("СОКОЛОВ-АНДРЕЙ-ВЛАДИМИРОВИЧ ", "ПРОИЗВОДСТВО ", 120_000);
         Employee l = new Employee("МИХАЙЛОВ-ОЛЕКСЕЙ-ОЛЕГОВИЧ ", "ПРОИЗВОДСТВО ", 125_000);
         Employee m = new Employee("КУЗНЕЦОВ-ДМИТРИЙ-ОЛЕГОВИЧ ", "ПРОИЗВОДСТВО ", 115_000);
-        Employee[] employees1 = {a};
-        Employee[] employees2 = {b};
-        Employee[] employees3 = {c};
-        Employee[] employees4 = {d};
-        Employee[] employees5 = {e};
-        Employee[] employees6 = {f};
-        Employee[] employees7 = {g};
-        Employee[] employees8 = {h};
-        Employee[] employees9 = {i};
-        Employee[] employees10 = {j};
-        Employee[] employees11 = {k};
-        Employee[] employees12 = {l};
-        Employee[] employees13 = {m};
-        EmployeeBook worker1 = new EmployeeBook(employees1);
-        EmployeeBook worker2 = new EmployeeBook(employees2);
-        EmployeeBook worker3 = new EmployeeBook(employees3);
-        EmployeeBook worker4 = new EmployeeBook(employees4);
-        EmployeeBook worker5 = new EmployeeBook(employees5);
-        EmployeeBook worker6 = new EmployeeBook(employees6);
-        EmployeeBook worker7 = new EmployeeBook(employees7);
-        EmployeeBook worker8 = new EmployeeBook(employees8);
-        EmployeeBook worker9 = new EmployeeBook(employees9);
-        EmployeeBook worker10 = new EmployeeBook(employees10);
-        EmployeeBook worker11 = new EmployeeBook(employees11);
-        EmployeeBook worker12 = new EmployeeBook(employees12);
-        EmployeeBook worker13 = new EmployeeBook(employees13);
-        System.out.println(Arrays.toString(Employees));
+        EmployeeBook [] employees  = new EmployeeBook [15];
+        for (int v = 0; v < employees.length; v++) {
+            employees[v] = new EmployeeBook("Сотрудник" + (v ++));
+        }
+        System.out.println(Arrays.toString(employees));
 
 
+
+
+        // вывести массив в консоль целиком !!!!
 
 
 
